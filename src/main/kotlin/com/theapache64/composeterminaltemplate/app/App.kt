@@ -1,7 +1,6 @@
 package com.theapache64.composeterminaltemplate.app
 
 import com.theapache64.composeterminaltemplate.data.repo.AppRepo
-import com.theapache64.composeterminaltemplate.di.module.GodClass
 import com.theapache64.composeterminaltemplate.ui.splash.SplashActivity
 import com.theapache64.cyclone.core.Application
 import javax.inject.Inject
@@ -10,11 +9,8 @@ import javax.inject.Singleton
 @Singleton
 class AppController @Inject constructor(
     private val appRepo: AppRepo,
-    godClass: GodClass
-) {
-    init {
-        println("AppController says godClass is $godClass")
-    }
+)
+  {
     fun onArgs(args: Array<String>?) {
         appRepo.args = args
     }
