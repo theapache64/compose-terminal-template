@@ -37,5 +37,5 @@ tasks.withType<org.jetbrains.kotlin.gradle.tasks.KotlinCompile> {
 }
 
 application {
-    mainClass.set("com.theapache64.composeterminaltemplate.AppKt")
+    mainClass.set("com.theapache64.composeterminaltemplate.app.AppKt")
 }

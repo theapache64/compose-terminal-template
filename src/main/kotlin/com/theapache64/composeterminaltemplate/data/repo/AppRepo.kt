@@ -1,11 +1,17 @@
 package com.theapache64.composeterminaltemplate.data.repo
 
 import javax.inject.Inject
+import javax.inject.Singleton
 
-class AppRepo @Inject constructor() {
+interface AppRepo {
+    var args: List<String>?
+}
+
+@Singleton
+class AppRepoImpl @Inject constructor() : AppRepo {
     init {
         println("New instance created : $this")
     }
 
-    var args: Array<String>? = null
+    override var args: List<String>? = null
 }

@@ -12,7 +12,7 @@ class AppController @Inject constructor(
 )
   {
     fun onArgs(args: Array<String>?) {
-        appRepo.args = args
+        appRepo.args = args?.toList()
     }
 }
 
@@ -23,6 +23,7 @@ class App : Application() {
 
     companion object {
         var args: Array<String>? = null
+        lateinit var di : AppComponent
     }
 
     @Inject
@@ -30,7 +31,8 @@ class App : Application() {
 
     override fun onCreate() {
         super.onCreate()
-        DaggerAppComponent.create().inject(this)
+        di = DaggerAppComponent.create()
+        di.inject(this)
 
         appController.onArgs(args)
 

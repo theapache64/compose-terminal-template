@@ -1,5 +1,6 @@
 package com.theapache64.composeterminaltemplate.ui.splash
 
+import com.theapache64.composeterminaltemplate.app.App
 import com.theapache64.cyclone.core.Activity
 import com.theapache64.cyclone.core.Intent
 import javax.inject.Inject
@@ -18,11 +19,10 @@ class SplashActivity : Activity() {
 
     override fun onCreate() {
         super.onCreate()
-        DaggerSplashComponent.create().inject(this)
-
+        App.di.inject(this)
 
         viewModel.welcomeMsg.observe {
-            println("Output : $it")
+            println(it)
         }
     }
 }
