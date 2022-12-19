@@ -1,19 +1,9 @@
 package com.myterminal.app
 
-import com.myterminal.data.repo.AppRepo
 import com.myterminal.ui.splash.SplashActivity
 import com.theapache64.cyclone.core.Application
 import javax.inject.Inject
-import javax.inject.Singleton
 
-@Singleton
-class AppController @Inject constructor(
-    private val appRepo: AppRepo,
-) {
-    fun onArgs(args: Array<String>?) {
-        appRepo.args = args?.toList()
-    }
-}
 
 /**
  * Application class

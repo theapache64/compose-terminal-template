@@ -4,7 +4,7 @@ plugins {
     application
 }
 
-group = "com.theapache64"
+group = "com.myterminal"
 version = "1.0-SNAPSHOT"
 
 repositories {
