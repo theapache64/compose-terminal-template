@@ -45,7 +45,6 @@ class App : Application() {
  * Entry point
  */
 fun main(args: Array<String>) {
-    println(args.toList())
     App.args = args
     App().onCreate()
 }

@@ -13,6 +13,6 @@ class SplashViewModel @Inject constructor(
     val welcomeMsg: LiveData<String> = _welcomeMsg
 
     init {
-        _welcomeMsg.value = if (appRepo.args != null) "Hello ${appRepo.args}" else "Hello World!"
+        _welcomeMsg.value = if (appRepo.args.isNullOrEmpty()) "🌍 Hello World!" else "👋🏻 Hello ${appRepo.args}"
     }
 }

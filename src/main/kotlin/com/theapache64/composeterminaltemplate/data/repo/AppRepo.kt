@@ -9,9 +9,5 @@ interface AppRepo {
 
 @Singleton
 class AppRepoImpl @Inject constructor() : AppRepo {
-    init {
-        println("New instance created : $this")
-    }
-
     override var args: List<String>? = null
 }
