@@ -6,18 +6,18 @@ import com.theapache64.cyclone.core.Intent
 class HomeActivity : Activity() {
     companion object {
 
-        private const val KEY_NAME = "name"
+        private const val KEY_SPLASH_MSG = "splashMsg"
 
-        fun getStartIntent(name: String): Intent {
+        fun getStartIntent(splashMsg: String): Intent {
             return Intent(HomeActivity::class).apply {
-                putExtra(KEY_NAME, name)
+                putExtra(KEY_SPLASH_MSG, splashMsg)
             }
         }
     }
 
     override fun onCreate() {
         super.onCreate()
-        val name = getStringExtra(KEY_NAME)
-        println("Name is '$name'")
+        val splashMsg = getStringExtra(KEY_SPLASH_MSG)
+        println("Home says splash message is '$splashMsg'")
     }
 }
