@@ -1,6 +1,6 @@
-package com.theapache64.composeterminaltemplate.ui.splash
+package com.myterminal.ui.splash
 
-import com.theapache64.composeterminaltemplate.data.repo.AppRepo
+import com.myterminal.data.repo.AppRepo
 import com.theapache64.cyclone.core.livedata.LiveData
 import com.theapache64.cyclone.core.livedata.MutableLiveData
 import javax.inject.Inject

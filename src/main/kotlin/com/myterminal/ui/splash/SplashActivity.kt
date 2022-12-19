@@ -1,7 +1,7 @@
-package com.theapache64.composeterminaltemplate.ui.splash
+package com.myterminal.ui.splash
 
-import com.theapache64.composeterminaltemplate.app.App
-import com.theapache64.composeterminaltemplate.ui.home.HomeActivity
+import com.myterminal.app.App
+import com.myterminal.ui.home.HomeActivity
 import com.theapache64.cyclone.core.Activity
 import com.theapache64.cyclone.core.Intent
 import javax.inject.Inject

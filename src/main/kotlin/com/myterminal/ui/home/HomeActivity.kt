@@ -1,4 +1,4 @@
-package com.theapache64.composeterminaltemplate.ui.home
+package com.myterminal.ui.home
 
 import com.theapache64.cyclone.core.Activity
 import com.theapache64.cyclone.core.Intent

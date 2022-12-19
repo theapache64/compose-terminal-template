@@ -1,4 +1,4 @@
-package com.theapache64.composeterminaltemplate.data.repo
+package com.myterminal.data.repo
 
 import javax.inject.Inject
 import javax.inject.Singleton

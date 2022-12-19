@@ -1,7 +1,7 @@
-package com.theapache64.composeterminaltemplate.app
+package com.myterminal.app
 
-import com.theapache64.composeterminaltemplate.di.module.RepoModule
-import com.theapache64.composeterminaltemplate.ui.splash.SplashActivity
+import com.myterminal.di.module.RepoModule
+import com.myterminal.ui.splash.SplashActivity
 import dagger.Component
 import javax.inject.Singleton
 

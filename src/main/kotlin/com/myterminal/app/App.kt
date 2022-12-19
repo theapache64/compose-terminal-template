@@ -1,7 +1,7 @@
-package com.theapache64.composeterminaltemplate.app
+package com.myterminal.app
 
-import com.theapache64.composeterminaltemplate.data.repo.AppRepo
-import com.theapache64.composeterminaltemplate.ui.splash.SplashActivity
+import com.myterminal.data.repo.AppRepo
+import com.myterminal.ui.splash.SplashActivity
 import com.theapache64.cyclone.core.Application
 import javax.inject.Inject
 import javax.inject.Singleton
@@ -9,8 +9,7 @@ import javax.inject.Singleton
 @Singleton
 class AppController @Inject constructor(
     private val appRepo: AppRepo,
-)
-  {
+) {
     fun onArgs(args: Array<String>?) {
         appRepo.args = args?.toList()
     }
@@ -23,7 +22,7 @@ class App : Application() {
 
     companion object {
         var args: Array<String>? = null
-        lateinit var di : AppComponent
+        lateinit var di: AppComponent
     }
 
     @Inject
