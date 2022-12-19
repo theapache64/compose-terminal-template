@@ -8,21 +8,7 @@
 <img alt="Twitter: theapache64" src="https://img.shields.io/twitter/follow/theapache64.svg?style=social" />
 </a>
 
-> A project template to create Compose based terminal app in an Android-ish wa
-
-### ✨ Demo
-
-![](demo.gif)
-
-## 🦿 Prerequisites
-
-- Java 8 or above
-
-## ⌨️ Usage
-
-1. Step 1
-1. Step 2
-1. Step 3
+> A project template to create Compose based terminal app in an Android-ish way
 
 
 ## ✍️ Author
